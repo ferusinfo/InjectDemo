@@ -6,7 +6,6 @@ class AppViewModel: ObservableObject {
     func loadStatus() {
         DispatchQueue.main.async { [weak self] in
             self?.lastUpdated = Date().formatted(date: .omitted, time: .complete)
-            self?.objectWillChange.send()
         }
     }
 }

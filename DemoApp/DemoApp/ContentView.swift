@@ -27,6 +27,9 @@ struct ContentView: View {
         }
         .navigationViewStyle(.stack)
         .enableInjection()
+        .onInjection(callback: { _ in
+            self.model.loadStatus()
+        })
     }
 }
 
