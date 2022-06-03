@@ -14,7 +14,6 @@ struct HomeView: View {
             .tabItem { Text("Right") }
             .tag(2)
         }
-        .environmentObject(AppViewModel())
         .enableInjection()
     }
 }
